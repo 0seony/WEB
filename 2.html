@@ -14,10 +14,18 @@
                 if(this.value === 'night'){
                     target.style.backgroundColor='black';
                     target.style.color='white';
+                    var alist = document.querySelectorAll('a');
+                    for(var i = 0; i<alist.length; i++){
+                        alist[i].style.color='powderblue';
+                    }
                     this.value = 'day';
                 } else{
                     target.style.backgroundColor='white';
                     target.style.color='black';
+                    var alist = document.querySelectorAll('a');
+                    for(var i = 0; i<alist.length; i++){
+                        alist[i].style.color='blue';
+                    }
                     this.value = 'night';
                 }
                 ">
